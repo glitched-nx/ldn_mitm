@@ -37,7 +37,7 @@ jobs:
       if: ${{ steps.build.outcome == 'failure' }}
       run: |
         pushd /tmp
-        git clone https://github.com/switchbrew/libnx
+        git clone https://github.com/glitched-nx/libnx
         cd libnx
         make -j8 PREFIX="ccache aarch64-none-elf-"
         make install
@@ -53,7 +53,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1.1.4
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITH_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
         release_name: ${{ env.RELEASE_VERSION }}
@@ -64,7 +64,7 @@ jobs:
       id: upload-release-asset
       uses: actions/upload-release-asset@v1.0.2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITH_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./out/sd/ldn_mitm_${{ env.RELEASE_VERSION }}.zip
