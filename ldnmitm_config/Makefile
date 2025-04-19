@@ -13,7 +13,7 @@ ifneq ($(strip $(GITREV)),)
 VERSION := $(VERSION)-$(GITREV)
 endif
 
-APP_AUTHOR  :=  spacemeowx2
+APP_AUTHOR  :=  spacemeowx2/glitched-nx
 APP_TITLE   :=  ldnmitm cfg
 APP_VERSION :=  $(VERSION)
 
