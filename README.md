@@ -1,5 +1,17 @@
 # ldn_mitm
 
+Ein mitm-KIP, modifiziert von fs_mitm.
+
+ldn_mitm implementiert LAN-Konnektivität, indem es den systemeigenen ldn-Dienst ersetzt.
+
+Der ursprüngliche ldn-Dienst ist nur dafür zuständig, den WiFi-Dienst aufzurufen, um in der Nähe befindliche Switch-Konsolen zu scannen und eine Verbindung herzustellen. ldn_mitm verwendet LAN UDP, um diesen Scanvorgang zu emulieren. Daher wird ldn_mitm üblicherweise zusammen mit [`switch-lan-play`](https://github.com/spacemeowx2/switch-lan-play) verwendet. Eine Konfigurationsanleitung ist [hier](http://www.lan-play.com/install) zu finden.
+
+---
+---
+---
+
+## ldn_mitm
+
 A mitm kip modified from fs_mitm.
 
 
@@ -12,7 +24,7 @@ The original ldn service is only responsible for calling the WiFi service to sca
 Please try the [GHA nightlies](https://github.com/glitched-nx/ldn_mitm/actions) if you have updated beyond the supported AMS versions.
 | ldn_mitm version | Atmosphère version |
 | :--------------: | :----------------: |
-| [1.19.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.20.0)            | [1.8.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.8.0)               |
+| [1.19.0](https://github.com/glitched-nx/ldn_mitm/releases/tag/v1.19.0)            | [1.8.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.8.0)            |
 | [1.18.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.18.0)            | [1.6.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.6.0)               |
 | [1.16.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.16.0)            | [1.5.5](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.5.5)               |
 | [1.15.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.15.0)            | [1.5.2](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.5.2)               |
