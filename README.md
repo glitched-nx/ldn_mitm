@@ -1,4 +1,10 @@
-# ldn_mitm
+<div align="center">
+
+![ICON](icon.jpg)
+
+</div>
+
+# **ldn_mitm**
 
 Ein mitm-KIP, modifiziert von fs_mitm.
 
@@ -6,23 +12,10 @@ ldn_mitm implementiert LAN-Konnektivität, indem es den systemeigenen ldn-Dienst
 
 Der ursprüngliche ldn-Dienst ist nur dafür zuständig, den WiFi-Dienst aufzurufen, um in der Nähe befindliche Switch-Konsolen zu scannen und eine Verbindung herzustellen. ldn_mitm verwendet LAN UDP, um diesen Scanvorgang zu emulieren. Daher wird ldn_mitm üblicherweise zusammen mit [`switch-lan-play`](https://github.com/spacemeowx2/switch-lan-play) verwendet. Eine Konfigurationsanleitung ist [hier](http://www.lan-play.com/install) zu finden.
 
----
----
----
+## Versionstabelle
 
-## ldn_mitm
-
-A mitm kip modified from fs_mitm.
-
-
-ldn_mitm implements LAN connectivity by replacing the system's ldn service.
-
-The original ldn service is only responsible for calling the WiFi service to scan and connect to nearby Switch. ldn_mitm uses the LAN UDP to emulate this scanning process. Therefore ldn_mitm is usually used with [`switch-lan-play`](https://github.com/spacemeowx2/switch-lan-play). A configuration tutorial can be found [here](http://www.lan-play.com/install).
-
-## Version table
-
-Please try the [GHA nightlies](https://github.com/glitched-nx/ldn_mitm/actions) if you have updated beyond the supported AMS versions.
-| ldn_mitm version | Atmosphère version |
+Bitte probiere die [GHA Nightly-Builds](https://github.com/glitched-nx/ldn_mitm/actions) aus, wenn du über die unterstützten AMS-Versionen hinaus aktualisiert hast.
+| ldn_mitm Version | Atmosphère Version |
 | :--------------: | :----------------: |
 | [1.19.0](https://github.com/glitched-nx/ldn_mitm/releases/tag/v1.19.0)            | [1.8.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.8.0)            |
 | [1.18.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.18.0)            | [1.6.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.6.0)               |
@@ -42,36 +35,35 @@ Please try the [GHA nightlies](https://github.com/glitched-nx/ldn_mitm/actions) 
 | [1.3.4](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.3.4)            | [0.11](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/0.11.0)/[0.12](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/0.12.0)          |
 | [1.3.3](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.3.3)            | [0.10](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/0.10.0)               |
 
-## Development
+## Entwicklung
 
-Make sure that the submodule is initialized.
+Stelle sicher, dass das Submodul initialisiert ist.
 
 ```bash
 git submodule update --init --recursive
 ```
 
 
-### Using Docker
+### Mit Docker
 
-1. Install `Docker` and `docker-compose`.
+1. Installiere `Docker` und `docker-compose`.
 
-2. Run `docker-compose up --build`. It runs `make -j8` in the container.
+2. Führe `docker-compose up --build` aus. Dies führt `make -j8` im Container aus.
 
 
-### Using devkitPro
+### Mit devkitPro
 
-1. Install [`devkitPro`](https://devkitpro.org/wiki/Getting_Started) and install `switch-dev`, `libnx` using `dkp-pacman`.
+1. Installiere [`devkitPro`](https://devkitpro.org/wiki/Getting_Started) und installiere `switch-dev`, `libnx` mit `dkp-pacman`.
 
-2. Run `make` command.
+2. Führe den `make`-Befehl aus.
 
-Licensing
+Lizenzierung
 =====
 
-This software is licensed under the terms of the GPLv2, with exemptions for specific projects noted below.
+Diese Software ist unter den Bedingungen der GPLv2 lizenziert, mit Ausnahmen für bestimmte Projekte, die unten aufgeführt sind.
 
-You can find a copy of the license in the [LICENSE file](LICENSE).
+Eine Kopie der Lizenz findest du in der [LICENSE-Datei](LICENSE).
 
-Exemptions:
-* The [yuzu Nintendo Switch emulator](https://github.com/yuzu-emu/yuzu) and the [Ryujinx Team and Contributors](https://github.com/orgs/Ryujinx) are exempt from GPLv2 licensing. They are permitted, each at their individual discretion, to instead license any source code authored for the ldn_mitm project as either GPLv2 or later or the [MIT license](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/licensing_exemptions/MIT_LICENSE). In doing so, they may alter, supplement, or entirely remove the copyright notice for each file they choose to relicense. Neither the ldn_mitm project nor its individual contributors shall assert their moral rights against any of the aforementioned projects.
-* [Nintendo](https://github.com/Nintendo) is exempt from GPLv2 licensing and may (at its option) instead license any source code authored for the ldn_mitm project under the Zero-Clause BSD license.
-
+Ausnahmen:
+* Der [yuzu Nintendo Switch Emulator](https://github.com/yuzu-emu/yuzu) und das [Ryujinx Team und seine Mitwirkenden](https://github.com/orgs/Ryujinx) sind von der GPLv2-Lizenzierung ausgenommen. Sie dürfen, jeweils nach eigenem Ermessen, jeden für das ldn_mitm-Projekt erstellten Quellcode entweder unter GPLv2 oder später oder unter der [MIT-Lizenz](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/licensing_exemptions/MIT_LICENSE) lizenzieren. Dabei können sie den Copyright-Hinweis für jede Datei, die sie neu lizenzieren, ändern, ergänzen oder vollständig entfernen. Weder das ldn_mitm-Projekt noch seine einzelnen Mitwirkenden werden ihre moralischen Rechte gegenüber einem der oben genannten Projekte geltend machen.
+* [Nintendo](https://github.com/Nintendo) ist von der GPLv2-Lizenzierung ausgenommen und kann (nach eigenem Ermessen) jeden für das ldn_mitm-Projekt erstellten Quellcode unter der Zero-Clause BSD-Lizenz lizenzieren.
