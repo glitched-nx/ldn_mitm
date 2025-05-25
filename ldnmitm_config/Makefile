@@ -7,15 +7,12 @@ endif
 TOPDIR ?= $(CURDIR)
 include $(DEVKITPRO)/libnx/switch_rules
 
-GITREV := $(shell git rev-parse HEAD 2>/dev/null | cut -c1-8)
-VERSION := v1.19.0
-ifneq ($(strip $(GITREV)),)
-VERSION := $(VERSION)-$(GITREV)
-endif
+TARGET_VERSION := $(shell git describe --tags --always)
+VERSION_DEFINES := -DGITDESCVER="\"${TARGET_VERSION}\""
 
 APP_AUTHOR  :=  spacemeowx2/glitched-nx
 APP_TITLE   :=  ldnmitm cfg
-APP_VERSION :=  $(VERSION)
+APP_VERSION :=  ${TARGET_VERSION}
 
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
