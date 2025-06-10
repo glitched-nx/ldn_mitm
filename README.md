@@ -17,6 +17,7 @@ Der ursprüngliche ldn-Dienst ist nur dafür zuständig, den WiFi-Dienst aufzuru
 Bitte probiere die [GHA Nightly-Builds](https://github.com/glitched-nx/ldn_mitm/actions) aus, wenn du über die unterstützten AMS-Versionen hinaus aktualisiert hast.
 | ldn_mitm Version | Atmosphère Version |
 | :--------------: | :----------------: |
+| [1.21.0](https://github.com/glitched-nx/ldn_mitm/releases/tag/v1.21.0)            | [1.9.1](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.9.1)    |
 | [1.20.0](https://github.com/glitched-nx/ldn_mitm/releases/tag/v1.20.0)            | [1.9.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.9.0-prerelease)    |
 | [1.19.0](https://github.com/glitched-nx/ldn_mitm/releases/tag/v1.19.0)            | [1.8.0](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.8.0)            |
 | [1.18.0](https://github.com/spacemeowx2/ldn_mitm/releases/tag/v1.18.0)            | [1.7.1](https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.7.1)               |
